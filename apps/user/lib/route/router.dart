@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:user/feature/movie_details/presentation/movie_details_screen.dart';
 import 'package:user/feature/myticket/presentation/my_tickets_screen.dart';
+import 'package:user/feature/profile/presentation/profile_screen.dart';
 import 'package:user/mainpage.dart';
 import 'package:user/route/route_contants.dart';
 
@@ -28,17 +29,20 @@ final router = GoRouter(
                 path: RouteConstants.HOME_PAGE,
                 builder: (context, state) => const HomePage(),
                 routes: [
-
+                  GoRoute(
+                      path: RouteConstants.MOVIE_DETAILS_PAGE,
+                      builder: (context, state) {
+                        Movie movie = state.extra as Movie;
+                        return MovieDetails(movie);
+                      })
                 ]),
-            GoRoute(
-                path: RouteConstants.MOVIE_DETAILS_PAGE,
-                builder: (context, state) {
-                  Movie movie = state.extra as Movie;
-                  return MovieDetails(movie);
-                }),
             GoRoute(
                 path: RouteConstants.MY_TICKETS_ROUTE,
                 builder: (context, state) => const MyTicketsScreen()
+            ),
+            GoRoute(
+                path: RouteConstants.PROFILE,
+                builder: (context, state) => const ProfileScreen()
             ),
           ])
     ]);

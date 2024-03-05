@@ -18,7 +18,7 @@ class MainPage extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(Icons.account_balance_wallet), label: "My Shows"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_balance_wallet), label: "Profile")
+              icon: Icon(Icons.people), label: "Profile")
         ],
         currentIndex: _calculateSelectedIndex(context),
         onTap: (int idx) => _onItemTapped(idx, context),
@@ -34,7 +34,7 @@ class MainPage extends StatelessWidget {
     if (location.startsWith(RouteConstants.MY_TICKETS_ROUTE)) {
       return 1;
     }
-    if (location.startsWith(RouteConstants.MOVIE_DETAILS_PAGE)) {
+    if (location.startsWith(RouteConstants.PROFILE)) {
       return 2;
     }
     return 0;
@@ -47,7 +47,7 @@ class MainPage extends StatelessWidget {
       case 1:
         GoRouter.of(context).go(RouteConstants.MY_TICKETS_ROUTE);
       case 2:
-        GoRouter.of(context).go(RouteConstants.MOVIE_DETAILS_PAGE);
+        GoRouter.of(context).go(RouteConstants.PROFILE);
     }
   }
 }
