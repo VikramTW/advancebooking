@@ -2,3 +2,5 @@
 dependency_overrides:
   network:
     path: ../../packages/network
+  common_widgets:
+    path: ../../packages/common_widgets

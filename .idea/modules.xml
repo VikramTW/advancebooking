@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/advancebooking.iml" filepath="$PROJECT_DIR$/.idea/advancebooking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/common_widgets/melos_common_widgets.iml" filepath="$PROJECT_DIR$/packages/common_widgets/melos_common_widgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/dls/melos_dls.iml" filepath="$PROJECT_DIR$/packages/dls/melos_dls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/employee/melos_employee.iml" filepath="$PROJECT_DIR$/apps/employee/melos_employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/network/melos_network.iml" filepath="$PROJECT_DIR$/packages/network/melos_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/user/melos_user.iml" filepath="$PROJECT_DIR$/apps/user/melos_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_advancebooking.iml" filepath="$PROJECT_DIR$/melos_advancebooking.iml" />
     </modules>
   </component>
 </project>

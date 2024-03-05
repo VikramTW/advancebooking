@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:network/app_config.dart';
+import 'package:user/route/route_contants.dart';
 
 import '../data/model/movie.dart';
 
@@ -12,7 +14,7 @@ class MovieTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        //context.push("/details", extra: _movie);
+        context.push(RouteConstants.MOVIE_DETAILS_PAGE, extra: _movie);
       },
       child: SizedBox(
         width: 150,

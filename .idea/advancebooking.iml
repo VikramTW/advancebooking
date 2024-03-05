@@ -2,9 +2,29 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/employee/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/employee/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/employee/build" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/user/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/user/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/user/build" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common_widgets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common_widgets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common_widgets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/dls/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/dls/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/dls/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
